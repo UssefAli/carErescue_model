@@ -1,0 +1,58 @@
+{
+  "trained_at": "2026-06-27T20:56:59.215928+00:00",
+  "vehicle": "Toyota Etios 2014",
+  "n_rows": 17031,
+  "window": 15,
+  "z_full": 10.0,
+  "threshold": 0.9,
+  "score_min": -0.608052,
+  "score_max": -0.38498,
+  "feature_order": [
+    "engine_rpm",
+    "vehicle_speed",
+    "engine_load",
+    "coolant_temperature",
+    "short_term_fuel_trim",
+    "long_term_fuel_trim",
+    "intake_manifold_pressure",
+    "intake_air_temp",
+    "throttle",
+    "timing_advance",
+    "control_module_voltage",
+    "barometric_pressure",
+    "fuel_air_equiv_ratio",
+    "catalyst_temp_s1",
+    "catalyst_temp_s2",
+    "total_fuel_trim",
+    "load_vs_throttle",
+    "map_vs_throttle",
+    "rpm_per_speed",
+    "coolant_vs_load",
+    "catalyst_delta"
+  ],
+  "health_features": [
+    "coolant_temperature",
+    "short_term_fuel_trim",
+    "long_term_fuel_trim",
+    "total_fuel_trim",
+    "control_module_voltage",
+    "fuel_air_equiv_ratio",
+    "intake_air_temp",
+    "barometric_pressure",
+    "catalyst_temp_s1",
+    "catalyst_temp_s2",
+    "catalyst_delta",
+    "coolant_vs_load"
+  ],
+  "validation": {
+    "note": "Illustrative only: single unlabeled, mis-scaled car; faults are synthetic sustained shifts. Primary mode = per-vehicle baseline.",
+    "mode": "per_vehicle_baseline",
+    "false_positive_rate": 0.0976,
+    "detection_rate": {
+      "mag_6": 0.0864,
+      "mag_8": 0.0864,
+      "mag_10": 0.9571
+    },
+    "population_fallback_false_positive_rate": 0.0805
+  }
+}
